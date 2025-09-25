@@ -41,6 +41,8 @@ df["discount_percent"].min()
 df_menor = df["price"]<med
 df_maior = df["price"]>med
 
+len(df_menor)
+
 df_menor.value_counts()
 df_maior.value_counts()
 
@@ -121,3 +123,10 @@ dados_ratings_extra = {
 df_ratings = pd.DataFrame(dados_ratings_extra)
 df_novo = pd.merge(df, df_ratings, on = "brand_name", how = "left")
 df_novo = [["ratings", "avg_new_rating"]]
+
+
+#SUBIR NO GITHUB
+
+#git add .
+#git commit -m "msg"
+#git push origin main
